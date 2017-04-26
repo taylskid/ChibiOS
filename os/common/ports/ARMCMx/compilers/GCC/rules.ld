@@ -72,6 +72,8 @@ SECTIONS
         *(.text)
         *(.text.*)
         *(.rodata)
+        . = ALIGN(2048);
+        *(.rodata.flash_data)
         *(.rodata.*)
         *(.glue_7t)
         *(.glue_7)
